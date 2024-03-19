@@ -1,0 +1,191 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo {
+   
+    font-size: 24px;
+    text-decoration: none;
+    color: red;
+    font-family: "Protest Riot", sans-serif;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1{
+    color:#ffcc00;
+    text-align: center;
+
+        font-family: "Protest Riot", sans-serif;
+        font-weight: 400;
+        font-style: normal;       
+}
+#intro{
+  color: white;
+}
+
+li{
+    color: white;
+}
+body{
+    background-image: url("backgroundimage.jpg");
+    background-size:auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  background-position: center center;
+      
+}
+
+
+footer {
+    background: rgb(18, 20, 20);
+    color:white;
+    padding: 10px;
+    text-align: center;
+
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Responsive Grid */
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  /* Individual Member Styles */
+  .team-member {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 50px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+#heading{
+    padding: 50px;
+}
+h5,p{
+    color: white;
+}
+li a{
+  color:skyblue;
+  font-family: "Protest Riot", sans-serif;
+
+}
+
+  /* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    padding: 20px 0;
+    position:relative;
+    width: 100%;
+    top: 0;
+    z-index: 999; /* Ensure navbar is on top */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white; /* Text color for the links */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    position: relative; /* Positioning for pseudo-elements */
+  }
+  
+  /* Hover effect */
+  .nav-links a:hover {
+    color: #ffcc00; /* Hover color for the links */
+  }
+  
+  /* Hover underline effect */
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffcc00; /* Underline color */
+    bottom: -2px; /* Move the underline below the text */
+    left: 0;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    transform: scaleX(0); /* Initially hide the underline */
+  }
+  
+  .nav-links a:hover::before {
+    transform: scaleX(1); /* Show the underline on hover */
+  }
+  
+  /* Hover background color effect */
+  .nav-links a::after {
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 204, 0, 0); /* Hover background color (transparent initially) */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+
+.nav-links a:hover::after {
+    background-color: rgba(255, 204, 0, 0.3); /* Hover background color (semi-transparent) */
+  }
+footer a {
+  color: skyblue; /* Set the text color */
+  text-decoration: none; /* Remove underline from link */
+  font-family: "Protest Riot", sans-serif;
+}
+
+footer a:hover {
+  color: yellow;
+}
